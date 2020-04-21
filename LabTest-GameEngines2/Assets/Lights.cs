@@ -30,6 +30,8 @@ public class Lights : MonoBehaviour
 
         GetComponent<Renderer>().material.color = 
             colors[current];
+        gameObject.tag = "active";
+        
     }
 
     // Update is called once per frame
@@ -56,6 +58,12 @@ public class Lights : MonoBehaviour
             current =0;
             GetComponent<Renderer>().material.color = 
                 colors[current];
+            
+            if(GetComponent<Renderer>().material.color == Color.green)
+            {
+                gameObject.tag = "active";
+            }
+
             yield return new WaitForSeconds(interval);
             yield break;
         }
@@ -65,6 +73,12 @@ public class Lights : MonoBehaviour
             current++;
             GetComponent<Renderer>().material.color = 
                 colors[current];
+
+            if(GetComponent<Renderer>().material.color == Color.green)
+            {
+                gameObject.tag = "active";
+            }
+            
             yield return new WaitForSeconds(interval);
             yield break;
         }
@@ -81,6 +95,12 @@ public class Lights : MonoBehaviour
             current = 0;
             GetComponent<Renderer>().material.color = 
                 colors[current];
+
+            if(GetComponent<Renderer>().material.color == Color.green)
+            {
+                gameObject.tag = "active";
+            }
+
             yield return new WaitForSeconds(ylwTime);
             yield break;
         }
@@ -90,6 +110,12 @@ public class Lights : MonoBehaviour
             current++;
             GetComponent<Renderer>().material.color = 
                 colors[current];
+
+            if(GetComponent<Renderer>().material.color == Color.green)
+            {
+                gameObject.tag = "active";
+            }
+            
             yield return new WaitForSeconds(ylwTime);
             yield break;
         }
