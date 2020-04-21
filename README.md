@@ -2,6 +2,9 @@
 This is a submission for Game Engines 2's lab test. Overall item generation
 and initialization with a random color worked. Color changes also worked... albeit 
 waaaaay too quickly. Seek behaviour is also carried out way too quickly. 
+Here's a video of it in action
+
+[![](http://img.youtube.com/vi/0BdTyU3ShB0/0.jpg)](http://www.youtube.com/watch?v=0BdTyU3ShB0 "video")
 
 ## Item Generation
 This involved the generation of a number of 
