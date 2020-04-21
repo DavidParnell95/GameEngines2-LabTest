@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Car
   - Lights
+  - active
+  - inactive
   layers:
   - Default
   - TransparentFX
